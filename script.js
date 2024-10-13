@@ -1,13 +1,15 @@
-let currentFrame = 1;
+let currentFrame = 0;
 const totalFrames = 24; // assuming 360°/15° = 24 frames
 let isAutoRotating = false;
 let autoRotateInterval;
 
 const disk = document.getElementById('rotating-disk');
+const grass1 = document.getElementById('grass-1');
 
 // Funktion, um das Bild zu aktualisieren
 function updateDisk() {
-    disk.src = `images/disc-${currentFrame}.png`;
+    disk.src = `images/disk-${currentFrame * 15}.png`;
+    grass1.backgroundPosition = currentFrame * 100;
 }
 
 // Funktion für manuelles Drehen nach links
