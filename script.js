@@ -36,7 +36,7 @@ document.getElementById('auto-rotate').addEventListener('click', () => {
             updateDisk();
         }, 100);
         isAutoRotating = true;
-        document.getElementById('auto-rotate').textContent = 'Automatisches Drehen stoppen';
+        document.getElementById('auto-rotate').textContent = 'Automatisches Drehen stoppen (A)';
     }
 });
 
